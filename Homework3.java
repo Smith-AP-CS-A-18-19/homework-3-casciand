@@ -1,5 +1,5 @@
 /*
- * First and Last Names
+ * Andrew Cascio
  */
 
 public class Homework3 {
@@ -17,34 +17,41 @@ public class Homework3 {
 	 * class (e.g. Math.random())
 	 */
 	public void grade() {
-
+			Homework3.grade(this);
 	}
 
 	/* Calculate and return the sum of value1, value2, and value3
 	 */
 	public int sum() {
-
+			int sum = value1 + value2 + value3;
+			return sum;
 	}
 
 	/* Calculate and return the average of value1, value2, and value3
 	 * Hint: the average of numbers can be fractional
 	 */
 	public double average() {
-
+			double average = (value1 + value2 + value3) / 3;
+			return average;
 	}
 
 	/* Calculate and return the difference between the product and sum of
 	 * value 1, value2, and value3
 	 */
 	 public int productSumDifference() {
-
+		 	int productSumDifference = (value1 * value2 * value3) - (value1 + value2 + value3);
+			return productSumDifference;
 	 }
 
 	 /* Calculate and return the sum of the squares of value1, value2, and
 	  * value3
 	  */
-	  public int sumSquares() {
-
+	  public double sumSquares() {
+				double x = Math.pow(value1, 2);
+				double y = Math.pow(value2, 2);
+				double z = Math.pow(value3, 2);
+				double sumSquares = x + y + z;
+				return sumSquares;
 	  }
 
 	  /* Tests to verify that your solutions work
